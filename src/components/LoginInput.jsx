@@ -18,7 +18,7 @@ function LoginInput({ login }) {
         type="password"
         value={password}
         onChange={onPasswordChange}
-        placeholder="Password"
+        placeholder="Passworddddddd"
       />
       <button type="button" onClick={() => login({ email, password })}>
         Login

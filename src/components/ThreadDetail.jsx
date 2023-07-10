@@ -56,11 +56,11 @@ function ThreadDetail({
       </div>
       <div className="thread-detail__body">
         <div className="thread-detail__votes">
-          <button type="button" onClick={onUpVoteClick}>
+          <button type="button" onClick={onUpVoteClick} name="up vote">
             {isThreadUpvoted ? <BsCaretUpFill /> : <BsCaretUp />}
           </button>
           <p>{upVotesBy.length - downVotesBy.length}</p>
-          <button type="button" onClick={onDownVoteClick}>
+          <button type="button" onClick={onDownVoteClick} name="down vote">
             {isThreadDownvoted ? <BsCaretDownFill /> : <BsCaretDown />}
           </button>
         </div>

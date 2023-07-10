@@ -11,11 +11,13 @@ const stories = {
 
 export default stories;
 
-const TemplateStory = (args) => (
-  <BrowserRouter>
-    <HeaderBar {...args} />
-  </BrowserRouter>
-);
+function TemplateStory(args) {
+  return (
+    <BrowserRouter>
+      <HeaderBar {...args} />
+    </BrowserRouter>
+  );
+}
 
 const LoggedIn = TemplateStory.bind({});
 LoggedIn.args = {
@@ -31,6 +33,6 @@ const LoggedOut = TemplateStory.bind({});
 LoggedOut.args = {
   authUser: null,
   logOut: () => {},
-}
+};
 
 export { LoggedIn, LoggedOut };

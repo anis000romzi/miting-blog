@@ -66,11 +66,11 @@ function ThreadItem({
       </div>
       <div className="thread-item__footer">
         <div className="thread-item__votes">
-          <button type="button" onClick={onUpVoteClick} name="up vote">
+          <button type="button" onClick={onUpVoteClick} aria-label="up vote">
             {isThreadUpvoted ? <BsCaretUpFill /> : <BsCaretUp />}
           </button>
           <span>{upVotesBy.length - downVotesBy.length}</span>
-          <button type="button" onClick={onDownVoteClick} name="down vote">
+          <button type="button" onClick={onDownVoteClick} aria-label="down vote">
             {isThreadDownvoted ? <BsCaretDownFill /> : <BsCaretDown />}
           </button>
         </div>

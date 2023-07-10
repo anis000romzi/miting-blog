@@ -11,11 +11,13 @@ const stories = {
 
 export default stories;
 
-const TemplateStory = (args) => (
-  <BrowserRouter>
-    <ThreadItem {...args} />
-  </BrowserRouter>
-);
+function TemplateStory(args) {
+  return (
+    <BrowserRouter>
+      <ThreadItem {...args} />
+    </BrowserRouter>
+  );
+}
 
 const NeutralVote = TemplateStory.bind({});
 NeutralVote.args = {

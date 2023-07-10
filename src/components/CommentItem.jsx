@@ -54,11 +54,11 @@ function CommentItem({
       </div>
       <div className="comment-item__body">
         <div className="comment-item__votes">
-          <button type="button" onClick={onUpVoteClick}>
+          <button type="button" onClick={onUpVoteClick} name="up vote">
             {isCommentUpvoted ? <BsCaretUpFill /> : <BsCaretUp />}
           </button>
           <p>{upVotesBy.length - downVotesBy.length}</p>
-          <button type="button" onClick={onDownVoteClick}>
+          <button type="button" onClick={onDownVoteClick} name="down vote">
             {isCommentDownvoted ? <BsCaretDownFill /> : <BsCaretDown />}
           </button>
         </div>
